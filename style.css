@@ -170,21 +170,31 @@ a:hover {
   padding: 0;
 }
 
-#sidebar li li {
+#sidebar .section-nav {
+  position: sticky;
+  top: 18px;
+  padding: 8px 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+
+#sidebar .section-nav li {
   border-bottom: 1px dashed #d1d1d1;
 }
 
-#sidebar li li:first-child {
-  border-top: 1px dashed #d1d1d1;
+#sidebar .section-nav li:last-child {
+  border-bottom: 0;
 }
 
-#sidebar li li a {
+#sidebar .section-nav a {
   display: block;
   padding: 10px 8px;
   line-height: 1.35;
 }
 
-#sidebar li li a:hover {
+#sidebar .section-nav a:hover {
   background: rgba(39, 106, 66, .07);
   text-decoration: none;
 }
@@ -250,6 +260,49 @@ a:hover {
   padding-right: 18px;
 }
 
+#Corso,
+#Info,
+#Programma,
+#Referenze,
+#AnniPassati {
+  scroll-margin-top: 18px;
+}
+
+.past-year {
+  margin-bottom: 34px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.past-year:last-child {
+  border-bottom: 0;
+}
+
+.past-year h4 {
+  margin: 0 0 7px;
+  color: var(--green-dark);
+  font-size: 1.45rem;
+  font-weight: normal;
+}
+
+.past-year h5 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.past-year-details {
+  margin-left: 24px;
+}
+
+.past-year-details p {
+  margin-bottom: 14px;
+}
+
+.past-year-details ul {
+  margin-top: 6px;
+  padding-left: 24px;
+}
+
 #footer {
   grid-column: 1 / -1;
   width: 100%;
@@ -280,6 +333,24 @@ a:hover {
 }
 
 @media (max-width: 720px) {
+  #sidebar .section-nav {
+    position: static;
+  }
+
+  #sidebar .section-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #sidebar .section-nav li {
+    flex: 1 1 50%;
+    border-bottom: 1px dashed #d1d1d1;
+  }
+
+  .past-year-details {
+    margin-left: 16px;
+  }
+
   #header {
     min-height: 92px;
   }
