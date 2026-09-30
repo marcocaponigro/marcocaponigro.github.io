@@ -199,6 +199,21 @@ a:hover {
   text-decoration: none;
 }
 
+#sidebar .section-nav .section-nav-submenu {
+  margin: 0 0 6px 12px;
+  padding-left: 8px;
+  border-left: 2px solid rgba(39, 106, 66, .2);
+}
+
+#sidebar .section-nav .section-nav-submenu li {
+  border-bottom: 0;
+}
+
+#sidebar .section-nav .section-nav-submenu a {
+  padding: 7px 8px;
+  font-size: .92em;
+}
+
 #content {
   min-width: 0;
 }
@@ -261,6 +276,10 @@ a:hover {
 }
 
 #Corso,
+#EvoluzioneControllo,
+#OrarioEvoluzione,
+#TestiEvoluzione,
+#MetodiMatematici,
 #Info,
 #Programma,
 #Referenze,
@@ -351,6 +370,16 @@ a:hover {
   #sidebar .section-nav li {
     flex: 1 1 50%;
     border-bottom: 1px dashed #d1d1d1;
+  }
+
+  #sidebar .section-nav .section-nav-submenu {
+    display: block;
+    margin-left: 10px;
+  }
+
+  #sidebar .section-nav .section-nav-submenu li {
+    display: block;
+    border-bottom: 0;
   }
 
   .past-year-details {

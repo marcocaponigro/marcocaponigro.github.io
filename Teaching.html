@@ -47,10 +47,14 @@
 <div id="sidebar">
   <nav class="section-nav" aria-label="Indice della pagina">
     <ul>
-      <li><a href="#Corso">A.A. 2026/2027</a></li>
-      <li><a href="#EvoluzioneControllo">Evoluzione e Controllo</a></li>
-      <li><a href="#OrarioEvoluzione">Orario delle lezioni</a></li>
-      <li><a href="#TestiEvoluzione">Testi consigliati</a></li>
+      <li><a href="#Corso">Top</a></li>
+      <li class="nav-parent">
+        <a href="#EvoluzioneControllo">Evoluzione e Controllo</a>
+        <ul class="section-nav-submenu">
+          <li><a href="#OrarioEvoluzione">Orario delle lezioni</a></li>
+          <li><a href="#TestiEvoluzione">Testi consigliati</a></li>
+        </ul>
+      </li>
       <li><a href="#MetodiMatematici">Metodi Matematici</a></li>
       <li><a href="#AnniPassati">Anni passati</a></li>
     </ul>
@@ -110,7 +114,7 @@ I dettagli relativi alle turnazioni saranno comunicati dopo la chiusura delle pr
 
       <h3 class="title">Informazioni generali</h3>
       <p><strong>Calendario:</strong><br />
-      Course starts on September 28th 2026 and ends on December 16th 2027.</p>
+      Course starts on September 28th 2026 and ends on January 15th 2027.</p>
 
       <h3 class="title" id="OrarioEvoluzione">Orario delle lezioni</h3>
       <dl class="course-schedule">
@@ -126,7 +130,7 @@ I dettagli relativi alle turnazioni saranno comunicati dopo la chiusura delle pr
       <ul class="course-books">
         <li>
           Piermarco Cannarsa<br />
-          <em>Analysis and Control of Evolution Equations: a friendly introduction</em><br />
+          <a href="didattica/CIME2024_Cannarsa_LectureNotes.pdf"><em>Analysis and Control of Evolution Equations: a friendly introduction</em></a><br />
           Lecture Notes
         </li>
         <li>
