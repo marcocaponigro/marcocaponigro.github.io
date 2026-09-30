@@ -159,6 +159,36 @@ a:hover {
   margin: 0 auto;
 }
 
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar li {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar li li {
+  border-bottom: 1px dashed #d1d1d1;
+}
+
+#sidebar li li:first-child {
+  border-top: 1px dashed #d1d1d1;
+}
+
+#sidebar li li a {
+  display: block;
+  padding: 10px 8px;
+  line-height: 1.35;
+}
+
+#sidebar li li a:hover {
+  background: rgba(39, 106, 66, .07);
+  text-decoration: none;
+}
+
 #content {
   min-width: 0;
 }
