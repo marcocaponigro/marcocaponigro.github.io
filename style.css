@@ -269,6 +269,12 @@ a:hover {
   line-height: 1.2;
 }
 
+/* Legacy pages may place the footer inside the content column. */
+#content > #footer {
+  width: calc(100% + 282px);
+  margin-left: -282px;
+}
+
 #footer a {
   color: #6f6f6f;
 }
@@ -304,6 +310,11 @@ a:hover {
 
   #sidebar img {
     width: min(65vw, 237px) !important;
+  }
+
+  #content > #footer {
+    width: 100%;
+    margin-left: 0;
   }
 
   .affiliation,
