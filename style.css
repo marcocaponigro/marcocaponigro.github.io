@@ -513,3 +513,40 @@ a:hover {
     font-size: 12px;
   }
 }
+
+/* Research: shared layout, readable bibliography and anchor spacing. */
+.research-content [id] {
+  scroll-margin-top: 18px;
+}
+.research-content section {
+  margin-bottom: 32px;
+}
+.research-content h2 {
+  font-size: 1.9em;
+}
+.research-content h3 {
+  font-size: 1.45em;
+}
+.publication-list {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+}
+.publication-list > li {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e2e2;
+  overflow-wrap: anywhere;
+}
+.publication-list > li:last-child {
+  border-bottom: 0;
+}
+.publication-list p {
+  margin-bottom: 5px;
+}
+.publication-links {
+  font-size: .95em;
+}
+@media (max-width: 720px) {
+  #menu li { flex-basis: 50%; }
+}
